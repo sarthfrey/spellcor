@@ -9,8 +9,8 @@ def index():
 
 @app.route('/correct', methods=['POST'])
 def return_correction():
-	corrected_word = correct(request.form['correct'])
-	return render_template('index.html', corrected_word=corrected_word)
+	corrected_text = " ".join([correct(word) for word in request.form['correct'].split(' ') if word])
+	return render_template('index.html', corrected_text=corrected_text)
 
 @app.errorhandler(404)
 def page_not_found(e):
