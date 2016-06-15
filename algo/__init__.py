@@ -11,7 +11,7 @@ def train(features):
 		bag_of_words[f] += 1
 	return bag_of_words
 
-bag_of_words = train(features(open('big.txt').read()))
+bag_of_words = train(features(open('algo/big.txt').read()))
 char_set = 'abcdefghijklmnopqrstuvwxyz-\''
 
 def edits1(word):

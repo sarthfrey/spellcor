@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from algo.slurp import correct
+from algo import correct
 
 app = Flask(__name__)
 
