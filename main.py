@@ -9,6 +9,7 @@ def index():
 
 @app.route('/correct', methods=['POST'])
 def correct():
+	print 'correct() hit'
 	word = request.form['correct']
 	return render_template('index.html', word=word)
 
