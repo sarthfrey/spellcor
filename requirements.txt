@@ -10,7 +10,7 @@ itsdangerous==0.24
 Jinja2==2.8
 keyring==9.0
 MarkupSafe==0.23
-numpy==1.11.0
+numpy==1.22.0
 pbr==1.9.1
 pyasn1==0.1.9
 pyparsing==2.1.4
